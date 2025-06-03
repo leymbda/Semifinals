@@ -9,15 +9,26 @@
     <Compile Include="ValueObjects\Country.fs" />
     <Compile Include="ValueObjects\DisplayName.fs" />
     <Compile Include="ValueObjects\PlayerId.fs" />
+    <Compile Include="ValueObjects\TeamId.fs" />
+    <Compile Include="ValueObjects\TeamName.fs" />
     <Compile Include="ValueObjects\Username.fs" />
     <Compile Include="Entities\Player.fs" />
+    <Compile Include="Entities\Team.fs" />
     <Compile Include="Repositories\IPlayerRepository.fs" />
-    <Compile Include="Services\IUsernameUniquenessService.fs" />
+    <Compile Include="Repositories\ITeamRepository.fs" />
+    <Compile Include="Services\UsernameUniquenessService.fs" />
     <Compile Include="Events\PlayerCreatedEvent.fs" />
     <Compile Include="Events\PlayerUsernameUpdatedEvent.fs" />
     <Compile Include="Events\PlayerDisplayNameUpdatedEvent.fs" />
     <Compile Include="Events\PlayerCountryUpdatedEvent.fs" />
     <Compile Include="Events\PlayerDeletedEvent.fs" />
+    <Compile Include="Events\TeamCreatedEvent.fs" />
+    <Compile Include="Events\TeamNameUpdatedEvent.fs" />
+    <Compile Include="Events\TeamDeletedEvent.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsToolkit.ErrorHandling" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
