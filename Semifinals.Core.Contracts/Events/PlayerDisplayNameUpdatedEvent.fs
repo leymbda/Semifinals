@@ -1,4 +1,4 @@
-﻿namespace Semifinals.Core.Events
+﻿namespace Semifinals.Core.Contracts.Events
 
 open Semifinals.Core.ValueObjects
 open System

@@ -1,10 +1,10 @@
 ﻿namespace Semifinals.Rosters.Application.Services
 
 open FsToolkit.ErrorHandling
-open Semifinals.Core.Entities
-open Semifinals.Core.Repositories
-open Semifinals.Core.Services
 open Semifinals.Core.ValueObjects
+open Semifinals.Rosters.Domain.Entities
+open Semifinals.Rosters.Domain.Repositories
+open Semifinals.Rosters.Domain.Services
 open System
 
 // TODO: How can service errors be handled better?

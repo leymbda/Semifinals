@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Entities\Player.fs" />
+    <Compile Include="Entities\Team.fs" />
+    <Compile Include="Repositories\IPlayerRepository.fs" />
+    <Compile Include="Repositories\ITeamRepository.fs" />
+    <Compile Include="Services\UsernameUniquenessService.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Semifinals.Core\Semifinals.Core.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsToolkit.ErrorHandling" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,6 +1,6 @@
-﻿namespace Semifinals.Core.Events
+﻿namespace Semifinals.Core.Contracts.Events
 
-open Semifinals.Core.Entities
+open Semifinals.Rosters.Domain.Entities
 open System
 
 type PlayerCreatedEvent = {

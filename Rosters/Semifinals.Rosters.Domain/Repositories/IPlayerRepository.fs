@@ -1,7 +1,7 @@
-﻿namespace Semifinals.Core.Repositories
+﻿namespace Semifinals.Rosters.Domain.Repositories
 
-open Semifinals.Core.Entities
 open Semifinals.Core.ValueObjects
+open Semifinals.Rosters.Domain.Entities
 
 type IPlayerRepository =
     abstract member GetById: id: PlayerId -> Async<Result<Player option, string>>

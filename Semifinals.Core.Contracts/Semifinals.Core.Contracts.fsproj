@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Events\PlayerCountryUpdatedEvent.fs" />
+    <Compile Include="Events\PlayerCreatedEvent.fs" />
+    <Compile Include="Events\PlayerDeletedEvent.fs" />
+    <Compile Include="Events\PlayerDisplayNameUpdatedEvent.fs" />
+    <Compile Include="Events\PlayerUsernameUpdatedEvent.fs" />
+    <Compile Include="Events\TeamCreatedEvent.fs" />
+    <Compile Include="Events\TeamDeletedEvent.fs" />
+    <Compile Include="Events\TeamNameUpdatedEvent.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rosters\Semifinals.Rosters.Domain\Semifinals.Rosters.Domain.fsproj" />
+  </ItemGroup>
+
+</Project>

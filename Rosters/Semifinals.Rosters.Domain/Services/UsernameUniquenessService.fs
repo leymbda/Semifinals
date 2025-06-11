@@ -1,8 +1,8 @@
-﻿namespace Semifinals.Core.Services
+﻿namespace Semifinals.Rosters.Domain.Services
 
 open FsToolkit.ErrorHandling
-open Semifinals.Core.Repositories
 open Semifinals.Core.ValueObjects
+open Semifinals.Rosters.Domain.Repositories
 
 type UsernameUniquenessServiceError =
     | DataAccessError of string

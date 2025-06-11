@@ -1,7 +1,7 @@
-﻿namespace Semifinals.Core.Repositories
+﻿namespace Semifinals.Rosters.Domain.Repositories
 
-open Semifinals.Core.Entities
 open Semifinals.Core.ValueObjects
+open Semifinals.Rosters.Domain.Entities
 
 type ITeamRepository =
     abstract member GetById: id: TeamId -> Async<Result<Team option, string>>

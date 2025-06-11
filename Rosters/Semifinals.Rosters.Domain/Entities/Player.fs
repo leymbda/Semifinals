@@ -1,4 +1,4 @@
-﻿namespace Semifinals.Core.Entities
+﻿namespace Semifinals.Rosters.Domain.Entities
 
 open Semifinals.Core.ValueObjects
 
