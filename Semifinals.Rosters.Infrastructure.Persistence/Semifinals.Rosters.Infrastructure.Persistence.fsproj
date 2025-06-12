@@ -8,8 +8,10 @@
 
   <ItemGroup>
     <Compile Include="Models\PlayerModel.fs" />
+    <Compile Include="Models\TeamModel.fs" />
     <Compile Include="CosmosOptions.fs" />
     <Compile Include="PlayerRepository.fs" />
+    <Compile Include="TeamRepository.fs" />
   </ItemGroup>
 
   <ItemGroup>
