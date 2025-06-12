@@ -12,6 +12,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Domain",
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Core.Contracts", "Semifinals.Core.Contracts\Semifinals.Core.Contracts.fsproj", "{6E59D78C-928A-4124-8882-BA7FE79C5631}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Infrastructure.Persistence", "Semifinals.Rosters.Infrastructure.Persistence\Semifinals.Rosters.Infrastructure.Persistence.fsproj", "{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{6E59D78C-928A-4124-8882-BA7FE79C5631}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E59D78C-928A-4124-8882-BA7FE79C5631}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E59D78C-928A-4124-8882-BA7FE79C5631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{4E1DD0D9-094E-4D48-B759-50E30E346D60} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7ACD10C5-B7DE-452D-9B13-6E000513E36D}
