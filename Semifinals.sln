@@ -24,7 +24,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Infrastr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Roster.Presentation", "Presentation\Semifinals.Roster.Presentation\Semifinals.Roster.Presentation.fsproj", "{82A94798-A223-46F0-8159-ED526BD4C004}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Presentation", "Presentation\Semifinals.Rosters.Presentation\Semifinals.Rosters.Presentation.fsproj", "{82A94798-A223-46F0-8159-ED526BD4C004}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semifinals.AppHost", "Semifinals.AppHost\Semifinals.AppHost.csproj", "{F1574303-3C63-493E-B33C-F66E97EC7EA6}"
 EndProject

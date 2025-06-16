@@ -37,6 +37,7 @@ type PlayerController() =
     [<OpenApiRequestBody(JsonContentType, typeof<UpdatePlayerRequest>)>]
     [<OpenApiResponseWithBody(HttpStatusCode.OK, JsonContentType, typeof<PlayerResponse>)>]
     [<OpenApiResponseWithBody(HttpStatusCode.BadRequest, JsonContentType, typeof<ErrorResponse>)>]
+    [<OpenApiResponseWithBody(HttpStatusCode.NotFound, JsonContentType, typeof<ErrorResponse>)>]
     [<OpenApiResponseWithBody(HttpStatusCode.Conflict, JsonContentType, typeof<ErrorResponse>, Description = "Username already in use")>]
     member _.Patch(
         [<HttpTrigger(AuthorizationLevel.Anonymous, "patch", Route = "players/{playerId:guid}")>] req: HttpRequestData,
@@ -65,7 +66,7 @@ type PlayerController() =
     ) =
         req.CreateResponse HttpStatusCode.NotImplemented
         // TODO: Username availability through ?username=foo
-        // TODO: Lists like players from specific region through ?country=bar
+        // TODO: Lists players from specific region through ?country=bar
         // TODO: Consider supporting multiple query params at the same time (?)
         // TODO: Consider fuzzy search for display/username for searching for players
         // TODO: Consider pagination for handling broader searches like by country

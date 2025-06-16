@@ -15,7 +15,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure\Semifinals.Rosters.Infrastructure.Persistence\Semifinals.Rosters.Infrastructure.Persistence.fsproj" />
-    <ProjectReference Include="..\Presentation\Semifinals.Roster.Presentation\Semifinals.Roster.Presentation.fsproj" />
+    <ProjectReference Include="..\Presentation\Semifinals.Rosters.Presentation\Semifinals.Rosters.Presentation.fsproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
