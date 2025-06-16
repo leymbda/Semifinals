@@ -4,12 +4,8 @@ using System.Text.Json.Serialization;
 
 namespace Semifinals.Rosters.Contracts.Payloads;
 
-public class PlayerResponse
+public class CreatePlayerRequest
 {
-    [JsonPropertyName("id")]
-    [JsonConverter(typeof(PlayerIdConverter))]
-    public required PlayerId Id { get; init; }
-
     [JsonPropertyName("username")]
     [JsonConverter(typeof(UsernameConverter))]
     public required Username Username { get; init; }
