@@ -2,17 +2,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.36105.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Core", "Semifinals.Core\Semifinals.Core.fsproj", "{1D14A897-4908-4314-A5C6-EE31A0BA88EC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{10297124-80FF-4000-967E-0EFC08D48BBC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rosters", "Rosters", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Core", "Domain\Semifinals.Core\Semifinals.Core.fsproj", "{1D14A897-4908-4314-A5C6-EE31A0BA88EC}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Application", "Rosters\Semifinals.Rosters.Application\Semifinals.Rosters.Application.fsproj", "{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Domain", "Domain\Semifinals.Rosters.Domain\Semifinals.Rosters.Domain.fsproj", "{4E1DD0D9-094E-4D48-B759-50E30E346D60}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Domain", "Rosters\Semifinals.Rosters.Domain\Semifinals.Rosters.Domain.fsproj", "{4E1DD0D9-094E-4D48-B759-50E30E346D60}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{1A8C353D-BCA7-4F11-961B-C9FE4D4F9781}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Core.Contracts", "Semifinals.Core.Contracts\Semifinals.Core.Contracts.fsproj", "{6E59D78C-928A-4124-8882-BA7FE79C5631}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Core.Serialization", "Contracts\Semifinals.Core.Serialization\Semifinals.Core.Serialization.fsproj", "{EDE9956B-6C51-4BBB-8947-623FC7D299C0}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Infrastructure.Persistence", "Semifinals.Rosters.Infrastructure.Persistence\Semifinals.Rosters.Infrastructure.Persistence.fsproj", "{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semifinals.Rosters.Contracts", "Contracts\Semifinals.Rosters.Contracts\Semifinals.Rosters.Contracts.csproj", "{BB44CA20-5039-47E3-9245-65C552340BE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C0B0CBB7-49AF-463C-B7DE-981EC679AE11}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Application", "Application\Semifinals.Rosters.Application\Semifinals.Rosters.Application.fsproj", "{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{356F70E2-5254-4392-A66D-59F09CB1847E}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Semifinals.Rosters.Infrastructure.Persistence", "Infrastructure\Semifinals.Rosters.Infrastructure.Persistence\Semifinals.Rosters.Infrastructure.Persistence.fsproj", "{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,18 +32,22 @@ Global
 		{1D14A897-4908-4314-A5C6-EE31A0BA88EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D14A897-4908-4314-A5C6-EE31A0BA88EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D14A897-4908-4314-A5C6-EE31A0BA88EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E1DD0D9-094E-4D48-B759-50E30E346D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4E1DD0D9-094E-4D48-B759-50E30E346D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E1DD0D9-094E-4D48-B759-50E30E346D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E1DD0D9-094E-4D48-B759-50E30E346D60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E59D78C-928A-4124-8882-BA7FE79C5631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E59D78C-928A-4124-8882-BA7FE79C5631}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E59D78C-928A-4124-8882-BA7FE79C5631}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E59D78C-928A-4124-8882-BA7FE79C5631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE9956B-6C51-4BBB-8947-623FC7D299C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE9956B-6C51-4BBB-8947-623FC7D299C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE9956B-6C51-4BBB-8947-623FC7D299C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE9956B-6C51-4BBB-8947-623FC7D299C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB44CA20-5039-47E3-9245-65C552340BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB44CA20-5039-47E3-9245-65C552340BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB44CA20-5039-47E3-9245-65C552340BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB44CA20-5039-47E3-9245-65C552340BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,9 +57,12 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{4E1DD0D9-094E-4D48-B759-50E30E346D60} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1D14A897-4908-4314-A5C6-EE31A0BA88EC} = {10297124-80FF-4000-967E-0EFC08D48BBC}
+		{4E1DD0D9-094E-4D48-B759-50E30E346D60} = {10297124-80FF-4000-967E-0EFC08D48BBC}
+		{EDE9956B-6C51-4BBB-8947-623FC7D299C0} = {1A8C353D-BCA7-4F11-961B-C9FE4D4F9781}
+		{BB44CA20-5039-47E3-9245-65C552340BE7} = {1A8C353D-BCA7-4F11-961B-C9FE4D4F9781}
+		{5B0E0894-7484-4956-B364-FBC3A6EBFB9E} = {C0B0CBB7-49AF-463C-B7DE-981EC679AE11}
+		{5A9C0D58-AE81-42B4-AA54-49F723FF74E6} = {356F70E2-5254-4392-A66D-59F09CB1847E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7ACD10C5-B7DE-452D-9B13-6E000513E36D}

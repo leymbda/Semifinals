@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Semifinals.Core\Semifinals.Core.fsproj" />
+    <ProjectReference Include="..\Semifinals.Core\Semifinals.Core.fsproj" />
   </ItemGroup>
 
   <ItemGroup>

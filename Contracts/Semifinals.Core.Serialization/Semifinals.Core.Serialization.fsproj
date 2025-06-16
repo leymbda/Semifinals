@@ -6,11 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Services\PlayerService.fs" />
+    <Compile Include="Thoth.fs" />
+    <Compile Include="STJ.fs" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Semifinals.Rosters.Domain\Semifinals.Rosters.Domain.fsproj" />
+    <PackageReference Include="Thoth.Json.Net" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Semifinals.Core\Semifinals.Core.fsproj" />
   </ItemGroup>
 
 </Project>
