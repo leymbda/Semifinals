@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="Application/Semifinals.Rosters.Application/Semifinals.Rosters.Application.fsproj" />
+  </Folder>
+  <Folder Name="/Contracts/">
+    <Project Path="Contracts/Semifinals.Core.Serialization/Semifinals.Core.Serialization.fsproj" />
+    <Project Path="Contracts/Semifinals.Rosters.Contracts/Semifinals.Rosters.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="Domain/Semifinals.Core/Semifinals.Core.fsproj" />
+    <Project Path="Domain/Semifinals.Rosters.Domain/Semifinals.Rosters.Domain.fsproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/Semifinals.Rosters.Infrastructure.Persistence/Semifinals.Rosters.Infrastructure.Persistence.fsproj" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="Presentation/Semifinals.Rosters.Presentation/Semifinals.Rosters.Presentation.fsproj" />
+  </Folder>
+  <Project Path="Semifinals.AppHost/Semifinals.AppHost.csproj" />
+</Solution>
