@@ -9,6 +9,7 @@
   <ItemGroup>
     <Compile Include="Common\Constants.fs" />
     <Compile Include="Common\Error.fs" />
+    <Compile Include="Common\HttpResponseData.fs" />
     <Compile Include="Controllers\PlayerController.fs" />
     <Compile Include="Controllers\TeamController.fs" />
   </ItemGroup>

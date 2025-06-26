@@ -1,24 +1,25 @@
 ﻿using Semifinals.Core.Serialization;
 using Semifinals.Core.ValueObjects;
+using Semifinals.Rosters.Domain.Entities;
 using System.Text.Json.Serialization;
 
 namespace Semifinals.Rosters.Contracts.Payloads;
 
-public class PlayerResponse
+public class PlayerResponse(Player player)
 {
     [JsonPropertyName("id")]
     [JsonConverter(typeof(PlayerIdConverter))]
-    public required PlayerId Id { get; init; }
+    public PlayerId Id { get; init; } = player.Id;
 
     [JsonPropertyName("username")]
     [JsonConverter(typeof(UsernameConverter))]
-    public required Username Username { get; init; }
+    public Username Username { get; init; } = player.Username;
 
     [JsonPropertyName("display_name")]
     [JsonConverter(typeof(DisplayNameConverter))]
-    public required DisplayName DisplayName { get; init; }
+    public DisplayName DisplayName { get; init; } = player.DisplayName;
 
     [JsonPropertyName("country")]
     [JsonConverter(typeof(CountryConverter))]
-    public required Country Country { get; init; }
+    public Country Country { get; init; } = player.Country;
 }

@@ -2,13 +2,13 @@
 
 namespace Semifinals.Rosters.Contracts.Payloads;
 
-public class ErrorResponse
+public class ErrorResponse(string code, string message)
 {
     [JsonPropertyName("code")]
-    public required string Code { get; init; }
+    public string Code { get; init; } = code;
 
     [JsonPropertyName("message")]
-    public required string Message { get; init; }
+    public string Message { get; init; } = message;
 }
 
 // TODO: Support specific errors within

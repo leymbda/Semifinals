@@ -1,16 +1,17 @@
 ﻿using Semifinals.Core.Serialization;
 using Semifinals.Core.ValueObjects;
+using Semifinals.Rosters.Domain.Entities;
 using System.Text.Json.Serialization;
 
 namespace Semifinals.Rosters.Contracts.Payloads;
 
-public class TeamResponse
+public class TeamResponse(Team team)
 {
     [JsonPropertyName("id")]
     [JsonConverter(typeof(TeamIdConverter))]
-    public required TeamId Id { get; init; }
+    public TeamId Id { get; init; } = team.Id;
 
     [JsonPropertyName("name")]
     [JsonConverter(typeof(TeamNameConverter))]
-    public required TeamName Name { get; init; }
+    public TeamName Name { get; init; } = team.Name;
 }

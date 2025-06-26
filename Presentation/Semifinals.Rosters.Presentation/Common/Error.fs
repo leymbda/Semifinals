@@ -3,10 +3,11 @@
 open Semifinals.Rosters.Contracts.Payloads
 
 // General purpose
-let BadRequest = ErrorResponse(Code = "", Message = "")
+let BadRequest = ErrorResponse("",  "")
+let InternalServerError = ErrorResponse("", "")
 
 // Players
-let PlayerNotFound = ErrorResponse(Code = "", Message = "")
-let UsernameInUse = ErrorResponse(Code = "", Message = "")
+let PlayerNotFound = ErrorResponse("", "")
+let UsernameInUse = ErrorResponse("", "")
 
 // TODO: Populate errors once format determined
