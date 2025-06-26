@@ -30,6 +30,17 @@ type DeletePlayerError =
     | InternalServiceError
     | PlayerNotFound
 
+[<RequireQualifiedAccess>]
+type ListPlayersQuery =
+    | Country of Country
+    | Name of string
+    | Username of string
+    | DisplayName of string
+    
+[<RequireQualifiedAccess>]
+type ListPlayersError =
+    | InternalServiceError
+
 type IPlayerService =
     abstract member CreatePlayer:
         username: Username ->
@@ -52,7 +63,9 @@ type IPlayerService =
         id: PlayerId ->
         Async<Result<unit, DeletePlayerError>>
 
-    // TODO: Create operations for listing by different types of query (DU for different query type?)
+    abstract member ListPlayers:
+        query: ListPlayersQuery ->
+        Async<Result<Player list, ListPlayersError>>
 
 type PlayerService(players: IPlayerRepository, usernameUniqueness: IUsernameUniquenessService) =
     interface IPlayerService with
@@ -113,4 +126,11 @@ type PlayerService(players: IPlayerRepository, usernameUniqueness: IUsernameUniq
                 |> AsyncResult.bindRequireTrue DeletePlayerError.PlayerNotFound
 
             // TODO: Send event for player deletion
+        }
+
+        member _.ListPlayers query = asyncResult {
+            raise (System.NotImplementedException())
+            return []
+
+            // TODO: Implement (requires repo methods for various search queries)
         }
